@@ -11,4 +11,7 @@
 .container p {
   margin-top: 10px;
   font-size: 20px;
+  height: 100px;
+  overflow: hidden;
+  overflow-wrap: break-word;
 }
