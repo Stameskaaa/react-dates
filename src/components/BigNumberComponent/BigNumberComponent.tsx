@@ -1,5 +1,5 @@
 import { useAppSelector } from '../../redux/hooks/hooks';
-import NumberTransition from '../NumberTransition/NumberTransition';
+import { NumberTransition } from '../NumberTransition/NumberTransition';
 import styles from './BigNumberComponent.module.scss';
 
 export const BigNumberComponent = () => {
