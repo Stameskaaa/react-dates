@@ -1,0 +1,12 @@
+.container {
+  font-weight: 700;
+  line-height: 1;
+  font-size: clamp(20px, 3vw + 1rem, 56px);
+  border-left: 1px solid;
+  border-image-source: linear-gradient(180deg, #3877ee -5%, #ef5da8 85%);
+  border-image-slice: 1;
+  border-image-width: 5;
+  border-image-outset: 0;
+  padding: 5px 50px;
+  margin-top: 50px;
+}

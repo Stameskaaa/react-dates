@@ -1,0 +1,95 @@
+.SwiperComponentWrapper {
+  position: relative;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 40px 80px;
+  @media (max-width: 800px) {
+    padding: 40px 60px;
+  }
+  animation: fadeIn 0.5s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide {
+  width: 400px;
+  text-align: left;
+}
+
+.swiper-btn-prev,
+.swiper-btn-next {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  bottom: 50%;
+  top: 50%;
+  border-radius: 50%;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transform: translateY(-50%);
+}
+
+.swiper-btn-prev:hover,
+.swiper-btn-next:hover {
+  transform: scale(1.05) translateY(-50%);
+}
+
+.swiper-btn-prev:active,
+.swiper-btn-next:active {
+  transform: scale(0.95) translateY(-50%);
+}
+
+.swiper-btn-prev::before,
+.swiper-btn-next::before {
+  content: '';
+  display: block;
+  width: 8px;
+  height: 8px;
+  border-left: 2px solid var(--main-blue);
+  border-top: 2px solid var(--main-blue);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.swiper-btn-prev::before {
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+.swiper-btn-next::before {
+  transform: translate(-50%, -50%) rotate(135deg);
+}
+
+.swiper-btn-prev {
+  left: 10px;
+}
+
+.swiper-btn-next {
+  right: 10px;
+}

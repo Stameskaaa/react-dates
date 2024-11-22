@@ -1,0 +1,59 @@
+.page_info {
+  position: absolute;
+  bottom: 50px;
+  font-size: 14px;
+  left: 3px;
+}
+
+.button_block {
+  display: flex;
+  gap: 20px;
+}
+
+.button_block div {
+  position: absolute;
+}
+
+.button_block button {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 1px solid var(--pale-gray);
+  transition: all 0.3s;
+}
+
+.disabled {
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+.button_block button:hover {
+  border-color: var(--pale-gray);
+}
+
+.button_block button:active {
+  transform: scale(0.95);
+}
+
+.button_block button::before {
+  content: '';
+  display: block;
+  width: 8px;
+  height: 8px;
+  border-left: 2px solid var(--main-blue);
+  border-top: 2px solid var(--main-blue);
+  position: absolute;
+  top: 50%;
+}
+
+.button_block button:first-child::before {
+  transform: translate(-50%, -50%) rotate(-45deg);
+  left: calc(50% + 2px);
+}
+
+.button_block button:last-child::before {
+  transform: translate(-50%, -50%) rotate(135deg);
+  left: calc(50% - 2px);
+}
