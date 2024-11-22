@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import styles from './NumberTransition.module.scss';
 
-const NumberTransition = ({ number }: { number: number }) => {
+export const NumberTransition = ({ number }: { number: number }) => {
   const [currentNumber, setCurrentNumber] = useState(2000);
 
   useEffect(() => {
@@ -33,5 +33,3 @@ const NumberTransition = ({ number }: { number: number }) => {
     </div>
   );
 };
-
-export default NumberTransition;
